@@ -116,7 +116,7 @@ function App() {
         <p>
           -Press "<b>C</b>" to switch "Add Note" mode.
         </p>
-        {notes.length > 1 && (
+        {notes.length > 0 && (
           <>
             <br />
             <p>
