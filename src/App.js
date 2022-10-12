@@ -36,14 +36,7 @@ function App() {
       }
       if (e.key === "*") {
         setDeleteNumber(false);
-        setNotes([
-          {
-            number: 1,
-            note: "This is a note",
-            color: "purple",
-            position: { x: -100, y: -100 },
-          },
-        ]);
+        setNotes([]);
         setMode(false);
         setBoxVisible(false);
         screen.current.focus();
