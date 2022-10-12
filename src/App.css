@@ -31,6 +31,7 @@
   width: 300px;
   margin-left: -150px;
   margin-top: 40px;
+  z-index: 30;
 }
 .note-container .note {
   padding: 9px 15px;
@@ -47,6 +48,7 @@
   background: #fff;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 3);
   width: 300px;
+  z-index: 30;
   transform: translatey(40px) translatex(-50%);
 }
 .note-box select {
@@ -128,7 +130,7 @@
 }
 
 .foot {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
   min-height: 150px;
@@ -138,7 +140,7 @@
   background-image: linear-gradient(to bottom, #5ca5f5 0%, #025084 100%);
   font-family: "Gemunu Libre", sans-serif;
   font-size: 20px;
-  z-index: 10;
+  z-index: 2;
   display: flex;
   justify-content: space-around;
 }

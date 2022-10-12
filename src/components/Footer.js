@@ -1,8 +1,15 @@
+import { useContext, useState } from "react";
+import MainContext from "../MainContext";
 import "../App.css";
 
 const FootBar = () => {
+  const { setMode } = useContext(MainContext);
   return (
-    <div className="foot">
+    <div
+      onMouseEnter={() => setMode(false)}
+      onMouseLeave={() => setMode(true)}
+      className="foot"
+    >
       <div className="logos">
         <a
           href="https://github.com/oztrkomer09"

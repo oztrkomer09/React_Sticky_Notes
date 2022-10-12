@@ -96,6 +96,7 @@ function App() {
         {notes && notes.map((note, key) => <Note key={key} {...note} />)}
 
         {boxVisible && <NoteBox />}
+        <FootBar></FootBar>
       </div>
 
       <div
@@ -109,7 +110,7 @@ function App() {
         <p>
           -Press "<b>C</b>" to switch "Add Note" mode.
         </p>
-        {notes.length > 0 && (
+        {notes.length > 1 && (
           <>
             <br />
             <p>
@@ -118,10 +119,6 @@ function App() {
           </>
         )}
       </div>
-      <FootBar
-        onMouseEnter={() => setMode(false)}
-        onMouseLeave={() => setMode(true)}
-      ></FootBar>
     </MainContext.Provider>
   );
 }

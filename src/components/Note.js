@@ -5,7 +5,7 @@ import Draggable from "react-draggable";
 const Note = (note) => {
   const [visible, setVisible] = useState(false);
   const [clickable, setClickable] = useState(true);
-  const { deleteNumber, setMode } = useContext(MainContext);
+  const { deleteNumber, setMode, notes } = useContext(MainContext);
 
   const showNote = () => {
     if (clickable) {
@@ -31,7 +31,7 @@ const Note = (note) => {
       >
         {deleteNumber && (
           <span onClick={showNote} className="note-box-number">
-            {note.number-1}
+            {note.number - 1}
           </span>
         )}
         {visible && <div className="note">{note.note}</div>}
