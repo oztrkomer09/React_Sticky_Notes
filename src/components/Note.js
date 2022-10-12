@@ -5,7 +5,7 @@ import Draggable from "react-draggable";
 const Note = (note) => {
   const [visible, setVisible] = useState(false);
   const [clickable, setClickable] = useState(true);
-  const { deleteNumber, setMode, notes } = useContext(MainContext);
+  const { deleteNumber, setMode } = useContext(MainContext);
 
   const showNote = () => {
     if (clickable) {
