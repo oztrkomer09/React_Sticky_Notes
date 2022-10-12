@@ -31,7 +31,7 @@ const Note = (note) => {
       >
         {deleteNumber && (
           <span onClick={showNote} className="note-box-number">
-            {note.number}
+            {note.number-1}
           </span>
         )}
         {visible && <div className="note">{note.note}</div>}
