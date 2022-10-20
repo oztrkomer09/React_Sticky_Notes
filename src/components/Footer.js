@@ -34,7 +34,7 @@ const FootBar = () => {
         </a>
       </div>
       <div className="info">
-        <h2>OMER FARUK OZTURK ™</h2>
+        <h2>OMER FARUK OZTURK ©</h2>
         <p>
           <i>Sticky Notes app made with React.JS</i>
         </p>
